@@ -2,7 +2,8 @@
 
 ## Description
 
-The objective of this project is map a ontology of knowledge about games and their users, and create a website where a user creates her profile and the website recommends games to that user.
+The objective of this project is map a ontology of knowledge about games and their users, and create a website where a user 
+selects some games he has played and liked and taking this as a basis the website recommends games to that user.
 
 ## Objectives
 
@@ -11,7 +12,7 @@ The objective of this project is map a ontology of knowledge about games and the
 * Map the games ontology
 * Create a RDF Database from that ontology
 * Study ways to use, import or consume the RDF Database
-* Create the website
+* Create the website with api and frontend
 
 ## Tools
 

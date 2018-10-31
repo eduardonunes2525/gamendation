@@ -29,6 +29,12 @@
     
 
 
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#hasModeGame -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#hasModeGame"/>
+    
+
+
     <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#hasPlayer -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#hasPlayer"/>
@@ -50,6 +56,12 @@
     <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#isGameCharacterOf -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#isGameCharacterOf"/>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#isModeGameOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#isModeGameOf"/>
     
 
 
@@ -142,6 +154,14 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#EducationalGenre">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#VideoGameGenre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#English -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#English">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#Language"/>
     </owl:Class>
     
 
@@ -288,6 +308,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#Linux -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#Linux">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#OperationalSystem"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#LogicGameGenre -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#LogicGameGenre">
@@ -301,6 +329,14 @@
     <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#MMOGenre">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#VideoGameGenre"/>
         <rdfs:comment>A massively multiplayer online game (also called MMO and MMOG) is a multiplayer video game which is capable of supporting large numbers of players simultaneously. By necessity, they are played on the Internet. Many games have at least one persistent world, however others just have large numbers of players competing at once in one form or another without any lasting effect to the world at all. These games can be found for most network-capable platforms, including the personal computer, video game console, or smartphones and other mobile devices.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#MacOS -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#MacOS">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#OperationalSystem"/>
     </owl:Class>
     
 
@@ -345,6 +381,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#OperationalSystem -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#OperationalSystem">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#SystemRequirementsGame"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#PartyGame -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#PartyGame">
@@ -365,6 +409,14 @@
     <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#Player -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#Player"/>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#Portuguese -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#Portuguese">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#Language"/>
+    </owl:Class>
     
 
 
@@ -411,6 +463,14 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#Singleplayer">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#VideoGameCharacteristic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#Spanish -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#Spanish">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#Language"/>
     </owl:Class>
     
 
@@ -495,6 +555,14 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#Visual">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#VideoGameDefinition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#Windows -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#Windows">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#OperationalSystem"/>
     </owl:Class>
     
 

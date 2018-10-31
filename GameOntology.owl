@@ -1,0 +1,261 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#"
+     xml:base="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">This ontology defines what is a Game. Defining importants structural elements of games and the relationships between them, organizing them hierarchically.</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#ActionAdventureGenre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#ActionAdventureGenre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#VideoGameGenre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#ActionGenre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#ActionGenre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#VideoGameGenre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#AdventureGenre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#AdventureGenre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#VideoGameGenre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#BoardGameGenre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#BoardGameGenre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#VideoGameGenre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#CardGameGenre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#CardGameGenre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#VideoGameGenre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#CasualGameGenre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#CasualGameGenre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#VideoGameGenre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#EducationalGenre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#EducationalGenre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#VideoGameGenre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#FightGenre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#FightGenre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#VideoGameGenre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#FirstPersonShooterGenre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#FirstPersonShooterGenre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#VideoGameGenre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#Game -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#Game">
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#Player"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#LogicGameGenre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#LogicGameGenre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#VideoGameGenre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#MMOGenre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#MMOGenre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#VideoGameGenre"/>
+        <rdfs:comment>A massively multiplayer online game (also called MMO and MMOG) is a multiplayer video game which is capable of supporting large numbers of players simultaneously. By necessity, they are played on the Internet. Many games have at least one persistent world, however others just have large numbers of players competing at once in one form or another without any lasting effect to the world at all. These games can be found for most network-capable platforms, including the personal computer, video game console, or smartphones and other mobile devices.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#PartyGame -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#PartyGame">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#Game"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#PartyGameGenre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#PartyGameGenre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#VideoGameGenre"/>
+        <rdfs:comment>Casual games are designed to be easily picked up and put down again, allowing for potentially short bursts of play, such as Call of Duty and most games on a mobile platform. This genre of gaming is meant to be a short and relaxing pastime, a rest in between other occupations and so is most popular with demographics who have less free time.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#Player -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#Player"/>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#ProfessionalPlayer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#ProfessionalPlayer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#Player"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#UsualPlayer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#ProgrammingGameGenre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#ProgrammingGameGenre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#VideoGameGenre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#RolePlayingGenre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#RolePlayingGenre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#VideoGameGenre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#Rule -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#Rule"/>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#SimulationGenre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#SimulationGenre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#VideoGameGenre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#SportGame -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#SportGame">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#Game"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#SportGenre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#SportGenre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#VideoGameGenre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#StrategyGenre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#StrategyGenre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#VideoGameGenre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#TabletopGame -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#TabletopGame">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#Game"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#UsualPlayer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#UsualPlayer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#Player"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#VideoGame -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#VideoGame">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#Game"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#VideoGameGenre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#VideoGameGenre"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#PartyGame"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#SportGame"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#TabletopGame"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#VideoGame"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.6.2018-09-06T00:27:41Z) https://github.com/owlcs/owlapi -->
+

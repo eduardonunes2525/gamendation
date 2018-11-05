@@ -25,25 +25,93 @@
 
     <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#hasGameCharacter -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#hasGameCharacter"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#hasGameCharacter">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#hasGameEngine -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#hasGameEngine">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#isGameEngineOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#VideoGame"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#GameEngine"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#hasGamePlatform -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#hasGamePlatform">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#hasGoal -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#hasGoal">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#isGoalOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#Game"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#Goal"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#hasInterface -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#hasInterface">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#isInterfaceOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#VideoGame"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#Interface"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#hasLanguage -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#hasLanguage">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#isLanguageOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#VideoGame"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#Language"/>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#hasModeGame -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#hasModeGame"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#hasModeGame">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#isModeGameOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#Game"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#ModeGame"/>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#hasPlayer -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#hasPlayer"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#hasPlayer">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#isPlayerOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#Game"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#Player"/>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#hasRule -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#hasRule"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#hasRule">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#isRuleOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#Game"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#Rule"/>
+    </owl:ObjectProperty>
     
 
 
@@ -59,6 +127,53 @@
     
 
 
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#isGameEngineOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#isGameEngineOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#GameEngine"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#VideoGame"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#isGamePlatformOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#isGamePlatformOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#isGoalOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#isGoalOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#Goal"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#Game"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#isInterfaceOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#isInterfaceOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#Interface"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#Game"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#isLanguageOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#isLanguageOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#Language"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#Game"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#isModeGameOf -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#isModeGameOf"/>
@@ -67,13 +182,19 @@
 
     <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#isPlayerOf -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#isPlayerOf"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#isPlayerOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#Player"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#Game"/>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#isRuleOf -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#isRuleOf"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#isRuleOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#Rule"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#Game"/>
+    </owl:ObjectProperty>
     
 
 
@@ -120,9 +241,7 @@
 
     <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#Audio -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#Audio">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#VideoGameDefinition"/>
-    </owl:Class>
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#Audio"/>
     
 
 
@@ -166,6 +285,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#EntityManipulation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#EntityManipulation">
+        <rdfs:comment>Entity manipulation consists of altering the attributes or abilities of an entity in the game world.</rdfs:comment>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#FightGenre -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#FightGenre">
@@ -185,7 +312,26 @@
     <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#Game -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#Game">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#hasGoal"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#Goal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#hasPlayer"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#Player"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#hasRule"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#Rule"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#Player"/>
+        <rdfs:comment>A game is an activity or sport usually involving skill, knowledge, or chance, in which you follow fixed rules and try to win against an opponent or to solve a puzzle.</rdfs:comment>
     </owl:Class>
     
 
@@ -194,15 +340,14 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#GameCharacter">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#VideoGame"/>
+        <rdfs:comment>http://autosemanticgame.institutedigitalgames.com/ontologies/game-character-ontology/</rdfs:comment>
     </owl:Class>
     
 
 
     <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#GameDesign -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#GameDesign">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#VideoGameDefinition"/>
-    </owl:Class>
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#GameDesign"/>
     
 
 
@@ -230,9 +375,17 @@
     
 
 
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#GameEngine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#GameEngine"/>
+    
+
+
     <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#GameEnterprise -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#GameEnterprise"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#GameEnterprise">
+        <rdfs:comment>Is a company that produces games</rdfs:comment>
+    </owl:Class>
     
 
 
@@ -246,9 +399,7 @@
 
     <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#GamePlatform -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#GamePlatform">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#VideoGameCharacteristic"/>
-    </owl:Class>
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#GamePlatform"/>
     
 
 
@@ -286,8 +437,22 @@
 
     <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#Gameplay -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#Gameplay">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#VideoGameDefinition"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#Gameplay"/>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#Goal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#Goal">
+        <rdfs:comment>Goals are the in-game objectives or conditions that the player must meet if he expects to succeed at the game. These are goals that the game defines for the player to meet, though they may or may not be explicitly communicated to the player. In fact, in the eyes of the player, they may not even be defined.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#Interface -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#Interface">
+        <rdfs:comment>Where the player and the game meet by means of presentation, input method, and input device.</rdfs:comment>
     </owl:Class>
     
 
@@ -295,16 +460,14 @@
     <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#Language -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#Language">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#VideoGameCharacteristic"/>
+        <rdfs:comment>Is a method of human communication, either spoken or written, consisting of the use of words in a structured and conventional way.</rdfs:comment>
     </owl:Class>
     
 
 
     <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#LevelDesign -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#LevelDesign">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#VideoGameDefinition"/>
-    </owl:Class>
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#LevelDesign"/>
     
 
 
@@ -341,27 +504,31 @@
     
 
 
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#Mobile -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#Mobile">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#GamePlatform"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#ModeGame -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#ModeGame">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#VideoGameCharacteristic"/>
-    </owl:Class>
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#ModeGame"/>
     
 
 
     <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#Multiplayer -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#Multiplayer">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#VideoGameCharacteristic"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#ModeGame"/>
     </owl:Class>
     
 
 
     <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#Narrative -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#Narrative">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#VideoGameDefinition"/>
-    </owl:Class>
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#Narrative"/>
     
 
 
@@ -389,6 +556,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#PC -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#PC">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#GamePlatform"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#PartyGame -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#PartyGame">
@@ -408,7 +583,17 @@
 
     <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#Player -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#Player"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#Player">
+        <rdfs:comment>A person taking part in a sport or game.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#Playstation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#Playstation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#GamePlatform"/>
+    </owl:Class>
     
 
 
@@ -447,7 +632,9 @@
 
     <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#Rule -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#Rule"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#Rule">
+        <rdfs:comment>The rules and constraints of a game define what can or cant be done in a game. They lay down the framework, or model, within which the game shall take place. Rules regulate the development of the game and determine the basic interactions that can take place within it. A games rules should not be considered static or fixed. In fact, some games, like Fluxx, are based on the idea that the games rules are constantly changing as the game is played.</rdfs:comment>
+    </owl:Class>
     
 
 
@@ -462,7 +649,7 @@
     <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#Singleplayer -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#Singleplayer">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#VideoGameCharacteristic"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#ModeGame"/>
     </owl:Class>
     
 
@@ -502,7 +689,7 @@
     <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#SystemRequirementsGame -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#SystemRequirementsGame">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#VideoGameCharacteristic"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#PC"/>
     </owl:Class>
     
 
@@ -527,35 +714,56 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#VideoGame">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#Game"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#hasGameEngine"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#GameEngine"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#hasGamePlatform"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#GamePlatform"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#hasInterface"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#Interface"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#hasLanguage"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#Language"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#hasModeGame"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#ModeGame"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#hasVideoGameGenre"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#VideoGameGenre"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Electronic game that involves interaction with a user interface to generate visual feedback on a video device such as a TV screen or computer monitor</rdfs:comment>
     </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#VideoGameCharacteristic -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#VideoGameCharacteristic"/>
-    
-
-
-    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#VideoGameDefinition -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#VideoGameDefinition"/>
     
 
 
     <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#VideoGameGenre -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#VideoGameGenre">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#VideoGameCharacteristic"/>
-    </owl:Class>
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#VideoGameGenre"/>
     
 
 
     <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#Visual -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#Visual">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#VideoGameDefinition"/>
-    </owl:Class>
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#Visual"/>
     
 
 
@@ -563,6 +771,14 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#Windows">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#OperationalSystem"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#Xbox -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#Xbox">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#GamePlatform"/>
     </owl:Class>
     
 
@@ -575,6 +791,35 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#EntityManipulation"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#Game"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#GameEngine"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#GameEnterprise"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#GamePlatform"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#Goal"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#Interface"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#Language"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#ModeGame"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#Player"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#Rule"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#VideoGameGenre"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#EntityManipulation"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#Game"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#GameEnterprise"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#Goal"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#Interface"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#Player"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#Rule"/>
+        </owl:members>
+    </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">

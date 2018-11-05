@@ -239,12 +239,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#Audio -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#Audio"/>
-    
-
-
     <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#BoardGameGenre -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#BoardGameGenre">
@@ -339,15 +333,8 @@
     <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#GameCharacter -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#GameCharacter">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#VideoGame"/>
         <rdfs:comment>http://autosemanticgame.institutedigitalgames.com/ontologies/game-character-ontology/</rdfs:comment>
     </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#GameDesign -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#GameDesign"/>
     
 
 
@@ -386,6 +373,12 @@
     <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#GameEnterprise">
         <rdfs:comment>Is a company that produces games</rdfs:comment>
     </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#GameEntity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#GameEntity"/>
     
 
 
@@ -435,12 +428,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#Gameplay -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#Gameplay"/>
-    
-
-
     <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#Goal -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#Goal">
@@ -462,12 +449,6 @@
     <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#Language">
         <rdfs:comment>Is a method of human communication, either spoken or written, consisting of the use of words in a structured and conventional way.</rdfs:comment>
     </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#LevelDesign -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#LevelDesign"/>
     
 
 
@@ -523,12 +504,6 @@
     <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#Multiplayer">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#ModeGame"/>
     </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#Narrative -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#Narrative"/>
     
 
 
@@ -758,12 +733,6 @@
     <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#VideoGameGenre -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#VideoGameGenre"/>
-    
-
-
-    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#Visual -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/9/GameOntology#Visual"/>
     
 
 

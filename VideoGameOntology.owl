@@ -1,0 +1,1038 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#"
+     xml:base="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology">
+        <rdfs:comment>The Video Game Ontology describes the world of video games</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#create -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#create">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#isCreatedBy"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#VideoGameDeveloper"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#VideoGame"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#hasEntityManipulation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#hasEntityManipulation">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#isEntityManipulationOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#VideoGame"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#VideoGameEntityManipulation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#hasGameGoal -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#hasGameGoal">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#isGameGoalOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#Game"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#GameGoal"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#hasGameRule -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#hasGameRule">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#isGameRuleOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#Game"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#GameRule"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#hasPlayer -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#hasPlayer">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#Multiplayer"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#Singleplayer"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#Player"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#hasVideoGameGenre -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#hasVideoGameGenre">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#isVideoGameGenreOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#VideoGame"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#VideoGameGenre"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#hasVideoGameInterface -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#hasVideoGameInterface">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#isVideoGameInterfaceOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#VideoGame"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#VideoGameInterface"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#isCreatedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#isCreatedBy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#VideoGame"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#VideoGameDeveloper"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#isEntityManipulationOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#isEntityManipulationOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#VideoGameEntityManipulation"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#VideoGame"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#isGameGoalOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#isGameGoalOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#GameGoal"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#Game"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#isGameRuleOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#isGameRuleOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#GameRule"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#Game"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#isPlayedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#isPlayedBy">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#play"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#Game"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#Player"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#isPublishedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#isPublishedBy">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#publish"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#VideoGame"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#VideoGamePublisher"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#isVideoGameGenreOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#isVideoGameGenreOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#VideoGameGenre"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#VideoGame"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#isVideoGameInterfaceOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#isVideoGameInterfaceOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#VideoGameInterface"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#VideoGame"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#play -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#play">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#Player"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#Game"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#publish -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#publish">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#VideoGamePublisher"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#VideoGame"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#ActionAdventureGenre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#ActionAdventureGenre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#VideoGameGenre"/>
+        <rdfs:comment>Action-adventure games combine elements of their two component genres, typically featuring long-term obstacles that must be overcome using a tool or item as leverage (which is collected earlier), as well as many smaller obstacles almost constantly in the way, that require elements of action games to overcome. Action-adventure games tend to focus on exploration and usually involve item gathering, simple puzzle solving, and combat. &quot;Action-adventure&quot; has become a label which is sometimes attached to games which do not fit neatly into another well known genre.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#ActionGenre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#ActionGenre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#VideoGameGenre"/>
+        <rdfs:comment>Action games emphasize physical challenges that require Hand-eye coordination and motor skill to overcome. They center around the player, who is in control of most of the action. Most of the earliest video games were considered action games; today, it is still a vast genre covering all games that involve physical challenges.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#ActionRPGGenre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#ActionRPGGenre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#RolePlayingGenre"/>
+        <rdfs:comment>The action role-playing game or action RPG is a type of role-playing video game which incorporates elements from action games or action-adventure games. The first action role-playing games were produced by Nihon Falcom in the 1980s, such as the Dragon Slayer series and Ys series. Later so-called &quot;Diablo clones&quot; are also part of this genre. Although the precise definition of the genre varies, the typical action RPG features a heavy emphasis on combat, often simplifying or removing non-combat attributes and statistics and the effect they have on the character&apos;s development.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#AdventureGenre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#AdventureGenre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#VideoGameGenre"/>
+        <rdfs:comment>Adventure games were some of the earliest games created, beginning with the text adventure Colossal Cave Adventure in the 1970s. That game was originally titled simply &quot;Adventure,&quot; and is the namesake of the genre. Over time, graphics have been introduced to the genre and the interface has evolved.
+
+
+Unlike adventure films, adventure games are not defined by story or content. Rather, adventure describes a manner of gameplay without reflex challenges or action. They normally require the player to solve various puzzles by interacting with people or the environment, most often in a non-confrontational way. It is considered a &quot;purist&quot; genre and tends to exclude anything which includes action elements beyond a mini game.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#ArtilleryGameGenre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#ArtilleryGameGenre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#StrategyGenre"/>
+        <rdfs:comment>Artillery is the generic name for early two or three-player (usually turn-based) computer games involving tanks fighting each other in combat or similar derivative games. Artillery games were among the earliest computer games developed and can be considered an extension of the original use of computers, which were once used for military-based calculations such as plotting the trajectories of rockets.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#Artist -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#Artist">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#VideoGameDeveloper"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#BeatemUpGame -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#BeatemUpGame">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#ActionGenre"/>
+        <rdfs:comment>Beat &apos;em ups (or brawlers) are a related, but distinct genre to fighting games. While they both involve close-range combat, beat &apos;em ups put players against large waves of opponents as opposed to a few.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#ChoicesGenre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#ChoicesGenre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#RolePlayingGenre"/>
+        <rdfs:comment>Some RPG give the player several choices in how their story will unfold. Typically the player can have an effect on whether the enemies in the game will be taken out lethally or non-lethally. This is very popular because it makes the player have to deal with the consequences of their own choices whenever they fail to save someone or don&apos;t get the ending they desired, for example. This makes for a much more interactive experience between gamers and gameplay, also explaining their popularity.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#CompetitiveGenre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#CompetitiveGenre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#SportGenre"/>
+        <rdfs:comment>Games that have high competitive factor but does not represent any traditional sports or the concept is fictional designed by the developer (e.g. Ball Jacks).</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#ConstructionSimulation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#ConstructionSimulation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#SimulationGenre"/>
+        <rdfs:comment>Construction and management simulations (or CMS) are a type of simulation game which task players to build, expand or manage fictional communities or projects with limited resources.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#Designer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#Designer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#VideoGameDeveloper"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#EducationalGenre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#EducationalGenre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#VideoGameGenre"/>
+        <rdfs:comment>Educational games are games explicitly designed with educational purposes, or which have incidental or secondary educational value. All types of games may be used in an educational environment. Educational games are games that are designed to help people to learn about certain subjects, expand concepts, reinforce development, understand a historical event or culture, or assist them in learning a skill as they play. Game types include board, card, and video games. An educational game is a game designed to teach humans about a specific subject and to teach them a skill. As educators, governments, and parents realize the psychological need and benefits of gaming have on learning, this educational tool has become mainstream. Games are interactive play that teach us goals, rules, adaptation, problem solving, interaction, all represented as a story. They satisfy our fundamental need to learn by providing enjoyment, passionate involvement, structure, motivation, ego gratification, adrenaline, creativity, social interaction and emotion in the game itself while the learning takes place.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#FantasyGenre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#FantasyGenre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#RolePlayingGenre"/>
+        <rdfs:comment>Due to RPG origins with Dungeons &amp; Dragons and other pen and paper role-playing games, the most popular setting for RPG by far is a fantasy world, usually with heavy medieval high fantasy influences, with series such as Diablo, Final Fantasy, Elder Scrolls and Baldur&apos;s Gate sharing a basic fantasy setting. However, numerous exceptions exist, with some notable examples including the East Asian settings of Far East of Eden and Jade Empire, the steampunk settings of Final Fantasy VI and Grandia, the science fiction settings of Star Ocean, Xeno, Knights of the Old Republic, and Mass Effect, the retro-futuristic setting of Fallout, and the contemporary settings of Mother, Megami Tensei and Alpha Protocol.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#FightGame -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#FightGame">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#ActionGenre"/>
+        <rdfs:comment>Fighting games center around close-ranged combat typically one on one fights or against a small number of equally powerful opponents, often involving violent and exaggerated unarmed attacks. Most fighting games feature a large number of playable characters and a competitive multiplayer mode.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#FirstPersonPartyGenre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#FirstPersonPartyGenre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#RolePlayingGenre"/>
+        <rdfs:comment>Also known as DRPG (Dungeon RPG), this subgenre consists of RPGs where the player leads a party of adventurers in first-person perspective through a dungeon or labyrinth, typically in a grid-based environment. Examples include the aforementioned Wizardry, Might and Magic and Bard&apos;s Tale series; as well as the Etrian Odyssey and Elminage series. Games of this type are also known as &quot;blobbers&quot;, since the player moves the entire party around the playing field as a single unit, or &quot;blob&quot;.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#FirstPersonShooter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#FirstPersonShooter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#ShooterGame"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#Game -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#Game">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#hasGameGoal"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#GameGoal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#hasGameRule"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#GameRule"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#isPlayedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#Player"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>A game is an activity or sport usually involving skill, knowledge, or chance, in which you follow fixed rules and try to win against an opponent or to solve a puzzle.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#GameGoal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#GameGoal">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#isGameGoalOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#Game"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Goals are the in-game objectives or conditions that the player must meet if he expects to succeed at the game. These are goals that the game defines for the player to meet, though they may or may not be explicitly communicated to the player. In fact, in the eyes of the player, they may not even be defined.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#GameRule -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#GameRule">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#isGameRuleOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#Game"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>The rules and constraints of a game define what can or cant be done in a game. They lay down the framework, or model, within which the game shall take place. Rules regulate the development of the game and determine the basic interactions that can take place within it. A games rules should not be considered static or fixed. In fact, some games, like Fluxx, are based on the idea that the games rules are constantly changing as the game is played.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#GrandStrategyWargame -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#GrandStrategyWargame">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#StrategyGenre"/>
+        <rdfs:comment>A grand strategy wargame is a wargame that places focus on grand strategy: military strategy at the level of movement and use of an entire nation state or empire&apos;s resources.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#GraphicAdventureGenre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#GraphicAdventureGenre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#AdventureGenre"/>
+        <rdfs:comment>Graphic adventure games emerged as graphics became more common. Adventure games began to supplement and later on replace textual descriptions with visuals (for example, a picture of the current location). Early graphic adventure games used text-parsers to input commands. The growing use of mice led to the &quot;point-and-click&quot; genre of adventure games, where the player would no longer have to type commands. The player could, for example, click on a hand icon and then on a rope to pick up the rope.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#InteractiveMovieGenre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#InteractiveMovieGenre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#AdventureGenre"/>
+        <rdfs:comment>The interactive movie genre came about with the invention of laserdiscs. An interactive movie contains pre-filmed full-motion cartoons or live-action sequences, where the player controls some of the moves of the main character. For example, when in danger, the player decides which move, action, or combination to choose. In these games, the only activity the player has is to choose or guess the move the designers intend him to make. Interactive movies usually differ from games that simply use full motion video, FMV, extensively between scenes in that they try to integrate it into the gameplay itself. This has been used in everything from racing games to fighting games.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#LevelDesigner -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#LevelDesigner">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#VideoGameDeveloper"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#LifeSimulation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#LifeSimulation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#SimulationGenre"/>
+        <rdfs:comment>Life simulation games (or artificial life games) involve living or controlling one or more artificial lives. A life simulation game can revolve around individuals and relationships, or it could be a simulation of an ecosystem.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#LogicGameGenre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#LogicGameGenre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#VideoGameGenre"/>
+        <rdfs:comment>Logic games require the player to solve logic puzzles or navigate complex locations such as mazes. They are well suited to casual play, and tile-matching puzzle games are among the most popular casual games. This genre frequently crosses over with adventure and educational games. Tetris, labeled a puzzle game, is credited for revolutionizing gaming and popularizing the puzzle genre.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#MMORPGGenre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#MMORPGGenre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#RolePlayingGenre"/>
+        <rdfs:comment>Massively multiplayer online role-playing games, or MMORPG, emerged in the mid to late 1990s as a commercial, graphical variant of text-based MUDs, which had existed since 1978. By and large, MMORPG feature the usual RPG objectives of completing quests and strengthening one&apos;s player character, but involve up to hundreds of players interacting with each other on the same persistent world in real-time.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#MOBAGenre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#MOBAGenre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#StrategyGenre"/>
+        <rdfs:comment>Multiplayer online battle arena (MOBA), also known as &quot;action real-time strategy&quot; (ARTS), is a genre of strategy video games that originated as a subgenre of real-time strategy, in which a player controls a single character in one of two teams. The objective is to destroy the opposing team&apos;s main structure with the assistance of periodically spawned computer-controlled units that march forward along set paths. Player characters typically have various abilities and advantages that improve over the course of a game and that contribute to a team&apos;s overall strategy. A fusion of action games, role-playing games and real-time strategy games, players usually do not construct either buildings or units. The genre gained popularity in the 2010s as a form of electronic sports, encompassing games such as the Defense of the Ancients mod for Warcraft III, its Valve-developed sequel Dota 2, League of Legends, Heroes of the Storm, and Smite.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#MetroidvaniaGame -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#MetroidvaniaGame">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#ActionAdventureGenre"/>
+        <rdfs:comment>Metroidvania games (named after its two first well-known franchises, Metroid and Castlevania) feature a large interconnected world map the player can explore, but access to parts of the world is limited by doors or other obstacles that can only be opened after the player has acquired special tools, weapons or abilities within the game. Acquiring such improvements also aids the player in defeating more difficult enemies and locating shortcuts and secret areas, and often includes retracing one&apos;s steps across the map. Metroidvanias usually do not consist of any linear gameplay and often involve lots of backtracking - especially after new powerups or tools have been obtained. Bossfights are also a staple of metroidvanias, without which they would be considered puzzle or adventure games</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#ModeGame -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#ModeGame"/>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#Multiplayer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#Multiplayer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#ModeGame"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#hasPlayer"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#Player"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>A multiplayer video game is a video game in which more than one person can play in the same game environment at the same time, either locally or over the internet.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#Offline -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#Offline">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#ModeGame"/>
+        <rdfs:comment>Offline is the condition of being capable of but currently not connected to a network of computers or other devices. The term is frequently used to describe someone who has the ability to be connected to the Internet but who is not currently connected to it.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#Online -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#Online">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#ModeGame"/>
+        <rdfs:comment>Online is the condition of being connected to a network of computers or other devices. The term is frequently used to describe someone who is currently connected to the Internet.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#PartyGame -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#PartyGame">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#Game"/>
+        <rdfs:comment>Party guests play a fortune-telling game with cards Party games are games that are played at social gatherings to facilitate interaction and provide entertainment and recreation. Categories include (explicit) icebreaker, parlour (indoor), picnic (outdoor), and large group games. Other types include pairing off (partnered) games, and parlour races. Different games will generate different atmospheres so the party game may merely be intended as an icebreakers, or the sole purpose for or structure of the party. As such, party games aim to include players of various skill levels and player-elimination is rare. Party games are intended to be played socially, and are designed to be easy for new players to learn.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#PartyGameGenre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#PartyGameGenre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#VideoGameGenre"/>
+        <rdfs:comment>Party games are video games developed specifically for multiplayer games between many players. Normally, party games have a variety of mini-games that range between collecting more of a certain item than other players or having the fastest time at something. Such games include the Mario Party series, Crash Bash, and Rayman Raving Rabbids. Versus multiplayer games are not generally considered to be party games.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#PlatformGames -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#PlatformGames">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#ActionGenre"/>
+        <rdfs:comment>Platform games (or platformers) have gameplay primarily centered around jumping and climbing to navigate the character&apos;s environment while avoiding obstacles and enemies. Generally the player&apos;s character in a platform game is able to jump many times their own height and player is offered some control over their movement in midair as well as the height and distance of their jumps.[2] Settings tend to be vertically exaggerated with lots of uneven terrain that the player can leap to or fall off of.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#Player -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#Player">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#play"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#Game"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>A person taking part in a sport or game.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#Programmer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#Programmer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#VideoGameDeveloper"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#ProgrammingGameGenre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#ProgrammingGameGenre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#VideoGameGenre"/>
+        <rdfs:comment>A programming game is a computer game where the player has no direct influence on the course of the game. Instead, a computer program or script is written in some domain-specific programming language in order to control the actions of the characters (usually robots, tanks or bacteria, which seek to destroy each other). In SpaceChem, for example, players design circuits used for creating molecules from raw materials.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#RacingGenre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#RacingGenre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#SportGenre"/>
+        <rdfs:comment>One competes against time or opponent using some means of transportation. The most popular subgenre is racing simulators.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#RealTimeStrategy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#RealTimeStrategy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#StrategyGenre"/>
+        <rdfs:comment>The moniker &quot;real-time strategy&quot; (RTS), usually applied only to certain computer strategy games, (however, this genre is probably the most well known of strategy games and is what most websites mean when they say &quot;strategy games&quot;) indicates that the action in the game is continuous, and players will have to make their decisions and actions within the backdrop of a constantly changing game state. Real-time strategy gameplay is characterised by obtaining resources, building bases, researching technologies and producing units.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#RealTimeTacticsGenre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#RealTimeTacticsGenre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#StrategyGenre"/>
+        <rdfs:comment>Real-time tactics (abbreviated RTT and less commonly referred to as fixed-unit real-time strategy) is a subgenre of tactical wargames played in real-time simulating the considerations and circumstances of operational warfare and military tactics. It is also sometimes considered a subgenre of real-time strategy, and thus may in this context exist as an element of gameplay or as a basis for the whole game.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#Realtime3DAdventure -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#Realtime3DAdventure">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#AdventureGenre"/>
+        <rdfs:comment>Around this time, real-time 3D adventure games appeared. These included Nightfall in 1998, Shenmue in 1999, realMyst in 2000, Shadow of Memories in 2001, and Uru: Ages Beyond Myst in 2003. They augmented traditional adventure gameplay with some of the attributes more commonly associated with action games. For example, freedom of motion and physics-based behavior.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#RhythmGame -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#RhythmGame">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#ActionGenre"/>
+        <rdfs:comment>Rhythm game or rhythm action is a genre of music-themed action video game that challenges a player&apos;s sense of rhythm. The genre includes dance games such as Dance Dance Revolution and music-based games such as Donkey Konga and Guitar Hero. Games in the genre challenge the player to press buttons at precise times: the screen shows which button the player is required to press, and the game awards points both for accuracy and for synchronization with the beat.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#RoguelikeGenre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#RoguelikeGenre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#RolePlayingGenre"/>
+        <rdfs:comment>The roguelike video game subgenre borrows its name and gameplay elements from the 1980 computer game Rogue. Superficially, a roguelike is a two-dimensional dungeon crawl with a high degree of randomness and an emphasis on statistical character development.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#RolePlayingGenre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#RolePlayingGenre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#VideoGameGenre"/>
+        <rdfs:comment>Role-playing video games draw their gameplay from traditional [not always] role-playing games like Dungeons &amp; Dragons. Most of these games cast the player in the role of one or more &quot;adventurers&quot; who specialize in specific skill sets (such as melee combat or casting magic spells) while progressing through a predetermined storyline. Many involve manoeuvring these character(s) through an overworld, usually populated with monsters, that allows access to more important game locations, such as towns, dungeons, and castles.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#SandboxRPGGenre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#SandboxRPGGenre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#RolePlayingGenre"/>
+        <rdfs:comment>Sandbox RPG or Open World RPG allow the player a large amount of freedom and usually contain a somewhat more open free-roaming (meaning the player is not confined to a single path restricted by rocks or fences etc.) world. Sandbox RPGs contain similarities to other sandbox games such as the Grand Theft Auto series, with a large number of interactable non-player characters, large amount of content and typically some of the largest worlds to explore and longest playtimes of all RPG due to an impressive amount of secondary content not critical to the game&apos;s main storyline. Sandbox RPG often attempt to emulate an entire region of their setting.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#ShooterGame -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#ShooterGame">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#ActionGenre"/>
+        <rdfs:comment>In shooter games (or simply shooters), players use ranged weapons to participate in the action, which takes place at a distance.Most shooters involve violent gameplay; lethal weaponry is used to damage opponents. However, some shooters, such as Splatoon, have non-violent objectives.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#SimulationGenre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#SimulationGenre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#VideoGameGenre"/>
+        <rdfs:comment>Simulation video games is a diverse super-category of games, generally designed to closely simulate aspects of a real or fictional reality.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#Singleplayer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#Singleplayer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#ModeGame"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#hasPlayer"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#Player"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>A singleplayer video game is a video game in which exactly one person can play in the same game environment, either locally or over the internet.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#SoundDesigner -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#SoundDesigner">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#VideoGameDeveloper"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#SportGame -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#SportGame">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#Game"/>
+        <rdfs:comment>Sport includes all forms of competitive physical activity or games which, through casual or organised participation, aim to use, maintain or improve physical ability and skills while providing enjoyment to participants, and in some cases, entertainment for spectators</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#SportGenre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#SportGenre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#VideoGameGenre"/>
+        <rdfs:comment>Sports are video games that simulate sports. This opposing team(s) can be controlled by other real life people or artificial intelligence.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#SportsBasedFightingGenre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#SportsBasedFightingGenre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#SportGenre"/>
+        <rdfs:comment>Sports-based fighting games are titles that fall firmly within the definitions of both the Fighting game and Sports game genre, such as boxing and wrestling video games. As such, they are usually put in their own separate subgenres. Often the fighting is far more realistic than in traditional fighting games (though the amount of realism can greatly vary), and many feature real-world franchises or fighters. Examples of this include the Fight Night and WWE 2K series.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#SportsGenre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#SportsGenre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#SportGenre"/>
+        <rdfs:comment>Sports games emulate the playing of traditional physical sports. Some emphasize actually playing the sport, while others emphasize the strategy behind the sport (such as Championship Manager). Others satirize the sport for comic effect (such as Arch Rivals). One of the best selling series in this genre is the FIFA (video game series) series. This genre emerged early in the history of video games (e.g., Pong) and remains popular today.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#StealthGame -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#StealthGame">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#ActionGenre"/>
+        <rdfs:comment>These games tend to emphasize subterfuge and precision strikes over the more overt mayhem of shooters, for example, the Metal Gear series, and the Sly Cooper series. In a Stealth game, players are usually still able to engage in loud, conspicuous combat, but are often punished for it. Other games, such as Dishonored, the player can obtain their goal with or without stealth, but stealth is encouraged. The inclusion of stealth as a mechanic in a game does not necessarily make it a Stealth Game.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#StrategyGenre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#StrategyGenre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#VideoGameGenre"/>
+        <rdfs:comment>Strategy video games focus on gameplay requiring careful and skillful thinking and planning in order to achieve victory and the action scales from world domination to squad-based tactics. In most strategy video games, says Andrew Rollings, &quot;the player is given a godlike view of the game world, indirectly controlling the units under his command.&quot;</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#SurvivalGame -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#SurvivalGame">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#ActionGenre"/>
+        <rdfs:comment>Survival games start the player off with minimal resources, in a hostile, open-world environment, and require them to collect resources, craft tools, weapons, and shelter, in order to survive as long as possible. Many are set in procedurally-generated environments, and are open-ended with no set goals. They may overlap with the survival horror genre, in which the player must survive within a supernatural setting, such as a zombie apocalypse.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#SurvivalHorrorGame -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#SurvivalHorrorGame">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#ActionAdventureGenre"/>
+        <rdfs:comment>Survival horror games focus on fear and attempt to scare the player via traditional horror fiction elements such as atmospherics, death, the undead, blood and gore. One crucial gameplay element in many of these games is the low quantity of ammunition, or number of breakable melee weapons. Notable examples include Silent Hill and Resident Evil.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#TabletopGame -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#TabletopGame">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#Game"/>
+        <rdfs:comment>Tabletop games are games that are normally played on a table or other flat surface, such as board games, card games, dice games, miniatures wargames or tile-based games.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#TacticalRPGGenre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#TacticalRPGGenre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#RolePlayingGenre"/>
+        <rdfs:comment>The tactical role-playing game subgenre principally refers to games which incorporate gameplay from strategy games as an alternative to traditional RPG systems. Like standard RPG, the player controls a finite party and battles a similar number of enemies, but this genre incorporates strategic gameplay such as tactical movement on an isometric grid. The genre has its origins in tabletop role-playing games, where each player has time to decide his or her characters&apos; actions.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#Tester -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#Tester">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#VideoGameDeveloper"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#TextAdventureGenre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#TextAdventureGenre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#AdventureGenre"/>
+        <rdfs:comment>The earliest adventure games were text adventures, also known as interactive fiction. Games such as the popular Zork series of the late 1970s and early 1980s allowed the player to use a keyboard to enter commands such as &quot;get rope&quot; or &quot;go west&quot; while the computer describes what is happening. A great deal of programming went into parsing the player&apos;s text input.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#ThirdPersonShooter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#ThirdPersonShooter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#ShooterGame"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#TowerDefenseGenre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#TowerDefenseGenre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#StrategyGenre"/>
+        <rdfs:comment>Tower defense games have a very simple layout. Usually, computer-controlled monsters called creeps move along a set path, and the player must place, or &quot;build&quot; towers along this path to kill the creeps. In some games, towers are placed along a set path for creeps, while in others towers can interrupt creep movement and change their path. In most tower defense games different towers have different abilities such as poisoning enemies or slowing them down. The player is awarded money for killing creeps, and this money can be used to buy more towers, or buy upgrades for a tower such as increased power or range.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#TurnBasedStrategyGenre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#TurnBasedStrategyGenre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#StrategyGenre"/>
+        <rdfs:comment>The term turn-based strategy (TBS) is usually reserved for certain computer strategy games, to distinguish them from real-time strategy games. A player of a turn-based game is allowed a period of analysis before committing to a game action, and some games allow a certain number of moves or actions to take place in a turn. Like real-time strategy games, this genre can include many strategy games which are not solely turn-based games, and games which may contain other features not related to whether the game is turn-based or not.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#TurnBasedTactics -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#TurnBasedTactics">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#StrategyGenre"/>
+        <rdfs:comment>The gameplay of turn-based tactics games (TBT) is characterized by the expectation of players to complete their tasks using the combat forces provided to them, and usually by the provision of a realistic (or at least believable) representation of military tactics and operations.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#VehicleSimulation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#VehicleSimulation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#SimulationGenre"/>
+        <rdfs:comment>Vehicle simulation games are a genre of video games which attempt to provide the player with a realistic interpretation of operating various kinds of vehicles.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#VideoGame -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#VideoGame">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#Game"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#hasEntityManipulation"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#VideoGameEntityManipulation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#hasVideoGameGenre"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#VideoGameGenre"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#hasVideoGameInterface"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#VideoGameInterface"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#isCreatedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#VideoGameDeveloper"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#isPublishedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#VideoGamePublisher"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Electronic game that involves interaction with a user interface to generate visual feedback on a video device such as a TV screen or computer monitor</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#VideoGameDeveloper -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#VideoGameDeveloper">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#create"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#VideoGame"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>A video game developer is a software developer that specializes in video game development – the process and related disciplines of creating video games. A game developer can range from one person who undertakes all tasks to a large business with employee responsibilities split between individual disciplines, such as programming, design, art, testing,</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#VideoGameEntityManipulation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#VideoGameEntityManipulation">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#isEntityManipulationOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#VideoGame"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Entity manipulation consists of altering the attributes or abilities of an entity in the game world. Abilities are the actions that entities are able to perform. They are the &quot;verbs&quot; of the game. Entities that cannot have any abilities are static entities</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#VideoGameGenre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#VideoGameGenre">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#isVideoGameGenreOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#VideoGame"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>A video game genre is a specific category of games related by similar gameplay characteristics. Genres are not usually defined by the actual content of the game or its medium of play, but by its common challenge.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#VideoGameInterface -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#VideoGameInterface">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#isVideoGameInterfaceOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#VideoGame"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Where the player and the game meet by means of presentation, input method, and input device.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#VideoGamePublisher -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#VideoGamePublisher">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#publish"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#VideoGame"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>A video game publisher is a company that publishes video games that have been developed either internally by the publisher or externally by a video game developer. As with book publishers or publishers of DVD movies, video game publishers are responsible for their product&apos;s manufacturing and marketing, including market research and all aspects of advertising.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#VisualNovelsGenre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#VisualNovelsGenre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#AdventureGenre"/>
+        <rdfs:comment>A visual novel is a game featuring mostly static graphics, usually with anime-style art. As the name might suggest, they resemble mixed-media novels or tableau vivant stage plays. Many visual novels track statistics that the player must build in order to advance the plot, and permit a variety of endings, allowing more dynamic reactions to the player&apos;s actions than a typical linear adventure plot. Many visual novels are dating sims, including bishōjo games.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#WargameGenre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#WargameGenre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#StrategyGenre"/>
+        <rdfs:comment>Wargames are a subgenre of strategy video games that emphasize strategic or tactical warfare on a map. Wargames generally take one of four archetypal forms, depending on whether the game is turn-based or real-time and whether the game&apos;s focus is upon military strategy or tactics.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#4XGameGenre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#4XGameGenre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#StrategyGenre"/>
+        <rdfs:comment>4X refers to a genre of strategy video game with four primary goals: eXplore, eXpand, eXploit and eXterminate. A 4X game can be turn-based or real-time. Perhaps the best known example of this genre is Sid Meier&apos;s Civilization series. 4X games often cover a very large period of time, giving the player the control of an entire civilization or species.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#Artist"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#Designer"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#LevelDesigner"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#Programmer"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#SoundDesigner"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#Tester"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#Game"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#GameGoal"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#GameRule"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#ModeGame"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#Player"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#VideoGameDeveloper"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#VideoGameEntityManipulation"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#VideoGameGenre"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#VideoGameInterface"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#VideoGamePublisher"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#Multiplayer"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#Offline"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#Online"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#Singleplayer"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#PartyGame"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#SportGame"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#TabletopGame"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#VideoGame"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.6.2018-09-06T00:27:41Z) https://github.com/owlcs/owlapi -->
+

@@ -84,7 +84,6 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#hasMultiplayer">
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#Normal"/>
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/eduardonunes/ontologies/2018/10/VideoGameOntology#isMultiplayerOf"/>
     </owl:ObjectProperty>
     
 

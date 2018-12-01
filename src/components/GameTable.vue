@@ -2,18 +2,17 @@
   <div>
     <h1>Tabela todos os jogos.</h1>
     <button v-on:click="getData">Buscar</button>
-    <table v-if="games.length!=0">
-        <tr>
-            <th>Nome</th>
-            <th>Gênero</th>
-            <!--<th>Resumo</th>-->
-        </tr>
-        <tr v-for="(game,index) in games" :key="index">
-            <td>{{(game.name.value)}}</td>
-            <td>{{(game.genre.value).replace("http://dbpedia.org/resource/", "")}}</td>
-            <!--<td>{{(game.abstract.value)}}</td>-->
-        </tr>
-        </table>
+    <template>
+      <v-data-table
+        :headers="headers"
+        :items="games"
+        class="elevation-1"
+      >
+        <template slot="items" slot-scope="props">
+          <td>{{ props.item.name.value }}</td>
+        </template>
+      </v-data-table>
+    </template>
   </div>
 </template>
 
@@ -25,7 +24,10 @@ export default {
     return {
         games: [],
         url: 'http://dbpedia.org/sparql?query=',
-        genre_selected: "Action"
+        genre_selected: "Action",
+        headers: [
+          { text: 'Nomes', value: 'name', align: 'left' }
+        ],
     }
   },
   computed: {
@@ -74,21 +76,3 @@ export default {
   }
 }
 </script>
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-h3 {
-  margin: 40px 0 0;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
-}
-</style>
